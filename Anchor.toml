@@ -1,0 +1,15 @@
+[features]
+seeds = true
+
+[programs.localnet]
+tic_tac_toe = "AEGWJjL3xzFdEMErSAf6vQ1pp1Fzpy1MaqDTpAKZJKLk"
+
+[provider]
+cluster = "localnet"
+#cluster = "devnet"
+wallet = 'C:\Users\86158\.config/solana/id.json'
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+#yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/t1.ts
+#test = "yarn run tests/hyx.ts"
